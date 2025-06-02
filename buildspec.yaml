@@ -1,11 +1,11 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: latest
-    commands:
-      - echo Installing dependencies (if needed)
+  # install:
+  #   runtime-versions:
+  #     nodejs: latest
+  #   commands:
+  #     - echo Installing dependencies (if needed)
   build:
     commands:
       - echo Building the site (or skip if static)
