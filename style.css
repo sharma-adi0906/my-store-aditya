@@ -42,13 +42,30 @@ body {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .product {
-  flex: 1 1 30%;
+  flex: 1 1 calc(33.333% - 1rem);
   background: white;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.product button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
 }
 .contact {
   background: #fff;
