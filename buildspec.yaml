@@ -8,10 +8,10 @@ phases:
   #     - echo Installing dependencies (if needed)
   build:
     commands:
-      - echo Building the site (or skip if static)
+      - echo "Building the site (or skip if static)"
   post_build:
     commands:
-      - echo Deploying to S3
+      - echo "Deploying to S3"
       - aws s3 sync . s3://my-store-webpage/ --delete
 
 artifacts:
